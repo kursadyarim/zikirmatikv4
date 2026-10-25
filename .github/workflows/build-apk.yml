@@ -32,6 +32,55 @@ jobs:
           mkdir -p proj/app/src/main/res/drawable
           cp "$HTML" proj/app/src/main/assets/index.html
 
+          base64 -d > proj/zikirmatik.keystore <<'EOF'
+          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
+          7zeJSvRmYwICJxA=
+          EOF
+
           cat > proj/settings.gradle <<'EOF'
           pluginManagement {
               repositories {
@@ -71,12 +120,21 @@ jobs:
               namespace 'com.zikirmatik.app'
               compileSdk 34
 
+              signingConfigs {
+                  debug {
+                      storeFile file('../zikirmatik.keystore')
+                      storePassword 'zikirmatik'
+                      keyAlias 'zikirmatik'
+                      keyPassword 'zikirmatik'
+                  }
+              }
+
               defaultConfig {
                   applicationId 'com.zikirmatik.app'
                   minSdk 26
                   targetSdk 34
-                  versionCode 4
-                  versionName '4.0'
+                  versionCode 5
+                  versionName '5.0'
               }
 
               buildTypes {
@@ -131,6 +189,7 @@ jobs:
           import android.view.View;
           import android.view.WindowManager;
           import android.webkit.JavascriptInterface;
+          import android.webkit.ValueCallback;
           import android.webkit.WebSettings;
           import android.webkit.WebView;
           import android.webkit.WebViewClient;
@@ -195,6 +254,18 @@ jobs:
                           }
                       });
                   }
+              }
+
+              @Override
+              public void onBackPressed() {
+                  web.evaluateJavascript("(window.zikirBack ? window.zikirBack() : false)", new ValueCallback<String>() {
+                      @Override
+                      public void onReceiveValue(String value) {
+                          if (!"true".equals(value)) {
+                              finish();
+                          }
+                      }
+                  });
               }
 
               @Override
